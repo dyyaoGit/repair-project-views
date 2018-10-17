@@ -97,13 +97,11 @@
             key: '3',
             value: '水电维修'
           }
-        ]
+        ],
+        testData: ""
       }
     },
     methods: {
-      getData(){
-        axios.get()
-      },
       initRepair_time() {
         let startDate = new Date().getMonth()
         let nowTime = moment().format('YYYY-MM-DD')
