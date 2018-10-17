@@ -1,7 +1,5 @@
 <template>
-  <div class="hello">
-
-  </div>
+  <mt-header fixed title="华信报修系统"></mt-header>
 </template>
 
 <script>
