@@ -12,7 +12,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+  @import './style/common';
+
   body {
   background: #f1f1f1;
 }
