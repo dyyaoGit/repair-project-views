@@ -1,5 +1,5 @@
 <template>
-  <mt-header fixed title="华信报修系统"></mt-header>
+  <mt-header fixed :title="this.title? this.title: '华信报修系统'"></mt-header>
 </template>
 
 <script>
@@ -7,6 +7,9 @@
   import 'mint-ui/lib/header/style.css'
 
   export default {
+    props: {
+      title: String
+    },
     components: {
       "mt-header": Header
     },

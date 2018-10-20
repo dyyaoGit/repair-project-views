@@ -1,10 +1,10 @@
 import * as fetch from 'axios'
 
-export class axios {
-  static baseURL = '/api'
+const baseURL = process.env.NODE_ENV == "development" ? '/api' : '/'
 
+export class axios {
   static instance = fetch.create({
-    baseURL: this.baseURL,
+    baseURL: baseURL,
     timeout: 20000
   })
 
@@ -21,7 +21,7 @@ export class axios {
   static xhr(url, data, config, methods){
     return new Promise((resolve, reject) => {
       this.instance[methods](url, data, config).then(res => {
-        resovle(res.data)
+        resolve(res.data)
       }).catch(err => {
         reject(err)
       })

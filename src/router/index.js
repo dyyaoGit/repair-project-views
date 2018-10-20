@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: home
+    },
+    {
+      path: '/handleStatus',
+      name: 'handleStatus',
+      component: () => import('@/views/handleStatus')
     }
   ]
 })
