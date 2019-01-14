@@ -16,9 +16,11 @@
       <group>
         <x-input  v-model="formData.name" title="报修人" placeholder="请留下您的姓名" />
         <x-input v-model="formData.teach_building" title="教学楼"
-          placeholder />
+          placeholder="请输入教学楼" />
         <x-input v-model="formData.dormitory_building" title="宿舍楼"
                  placeholder="请输入所在宿舍楼" />
+        <x-input v-model="formData.department" title="院系"
+                 placeholder="请输入院系" />
         <x-input
           title="详细地址"
           placeholder="请输入详细地址"
@@ -84,11 +86,12 @@
           teach_building: '', // 教学楼
           dormitory_building: '', // 宿舍楼
           address: '', // 详细地址
-          content: '报修内容', // 报修内容
+          content: '', // 报修内容
           imgs: [], // 报修图片
           phone: '', // 联系人电话
           repair_time: '', // 方便维修时间
-          category: ''  // 维修的种类
+          category: '',  // 维修的种类
+          department: '' // 所在院系
         },
         startTime: '',
         endTime: '',

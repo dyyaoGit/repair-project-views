@@ -15,7 +15,7 @@ module.exports = {
         target: 'http://localhost:3000',
         changeOrigin: true,
         pathRewrite: {
-          '/api': ''
+          '/api': '/'
         }
       }
     },
@@ -26,7 +26,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */
@@ -43,13 +43,13 @@ module.exports = {
   },
 
   build: {
-    // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    // Template for admin.html
+    index: path.resolve(__dirname, '../dist/admin.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsSubDirectory: 'viewsStatic',
+    assetsPublicPath: './',
 
     /**
      * Source Maps

@@ -1,5 +1,5 @@
 <template>
-  <mt-header fixed :title="this.title? this.title: '华信报修系统'"></mt-header>
+  <mt-header fixed :title="this.title? this.title: '郑州工业应用技术学院报修系统'"></mt-header>
 </template>
 
 <script>
